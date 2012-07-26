@@ -152,6 +152,13 @@ public class ParserFunctionSwitch
 					result = after;
 					break;
 				}
+				else if (i == (args.size() - 1) && before != null && after == null)
+				{
+				    // If this is the last clause and there is no "=",
+				    // we should treat it the same as default.
+				    result = before;
+				    break;
+				}
 				
 				if (numbers)
 				{
