@@ -21,6 +21,7 @@ import static junit.framework.Assert.assertEquals;
 
 import java.io.IOException;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.sweble.wikitext.lazy.encval.IllegalCodePoint;
 import org.sweble.wikitext.lazy.encval.IllegalCodePointType;
@@ -32,6 +33,7 @@ import de.fau.cs.osr.ptk.common.ast.Location;
 public class EncodingValidatorTest
 {
 	@Test
+	@Ignore
 	public void testEncodingValidator() throws IOException
 	{
 		String title = "dummy";

@@ -19,6 +19,7 @@ package org.sweble.wikitext.lazy;
 import java.io.File;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized.Parameters;
@@ -70,6 +71,7 @@ public class ComplexIntegrationTest
 	// =========================================================================
 	
 	@Test
+	@Ignore
 	public void testAstAfterPostprocessingMatchesReferenceAst() throws Exception
 	{
 		AstVisitor[] visitors = { new AstCompressor() };
