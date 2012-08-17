@@ -231,10 +231,6 @@ public class ExprParser
         SafeDeque<BigDecimal> operands = new SafeDeque<BigDecimal>();
         SafeDeque<TokenType> operators = new SafeDeque<TokenType>();
 
-        /*
-        $expr = strtr( $expr, array( '&lt;' => '<', '&gt;' => '>',
-            '&minus;' => '-', '‰öÕ' => '-' ) );
-         */
         int p = 0;
         int end = expr.length();
         Expecting expect = Expecting.EXPRESSION;
